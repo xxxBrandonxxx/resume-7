@@ -4,8 +4,8 @@ body {
   background-color: #ababab;
   display: flex;
   flex-direction: column;
+  
 }
-
 header {
   text-align: center;
   background-color: rgb(101, 101, 101);
@@ -52,6 +52,10 @@ ul li {
   left: 10px;
 }
 
+.Background-image{
+  background-repeat:no-repeat
+}
+
 .sidebar ul li a {
   text-decoration: none;
   display: block;
@@ -60,6 +64,7 @@ ul li {
   font-size: 1.5em;
   padding: 5px 30px;
   margin: 10px 0;
+  
 }
 
 .nav-menu li {
@@ -115,8 +120,32 @@ h3 {
   border-radius: 100px;
 }
 
-#content {
-  width: 80%;
-  padding: 1rem;
-  margin: 1rem;
+
+@media(max-width: 768px) {
+  .sidebar{
+      display:none;}
+  #icons { width: 1rem;
+    margin: 0%;
+    border-radius: 50px;
+    
+  }
+  }
+
+
+  
+
+
+
+/* 
+@media(max-width: 992px) {.INTRO{
+  display: inline-block;
 }
+  
+  }
+
+
+@media(max-width: 1200px) {.INTRO{
+  display: flex;
+}
+  
+} */
